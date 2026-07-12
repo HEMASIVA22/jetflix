@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jetflix — Premium OTT</title>
+  <meta name="description" content="Jetflix — a premium cinematic streaming experience across Tamil, Malayalam and English." />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="navbar" id="navbar" aria-label="Primary">
+    <div class="nav-left">
+      <a href="#" class="logo" aria-label="Jetflix home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6B35"/><stop offset="1" stop-color="#FFB703"/></linearGradient></defs><path d="M4 26 L16 4 L28 26 Z" fill="url(#lg)"/><circle cx="16" cy="20" r="3" fill="#0B0B0B"/></svg>
+        </span>
+        <span class="logo-text">Jet<span>flix</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New &amp; Popular</a></li>
+        <li><a href="#" id="myListLink">My List <span class="badge" id="listCount">0</span></a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+      </button>
+      <div class="avatar" aria-label="User profile">A</div>
+      <button class="icon-btn mobile-menu" id="mobileMenu" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero" aria-label="Featured">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <div class="skeleton skeleton-title"></div>
+      <div class="skeleton skeleton-line"></div>
+      <div class="skeleton skeleton-line short"></div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+  </header>
+
+  <main id="rows" class="rows-container"></main>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-inner">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="text" id="searchInput" placeholder="Search Tamil, Malayalam, English titles..." autocomplete="off" />
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <footer class="footer">
+    <p>Jetflix &copy; 2026 — Educational UI project. Not affiliated with any streaming brand. Movie data from OMDb.</p>
+  </footer>
+
+  <script src="./config/omdb-config.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
