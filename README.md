@@ -3,7 +3,7 @@
 A Netflix-inspired OTT streaming platform built using HTML, CSS, JavaScript, and OMDb API.
 
 🔗 **Live Demo:**
-🔗 **Repository:** {{https://github.com/HEMASIVA22/jetflix}}
+🔗 **Repository:** https://github.com/HEMASIVA22/jetflix
 
 > ⚠️ Educational UI clone for learning purposes only. Not affiliated with Netflix.
 
